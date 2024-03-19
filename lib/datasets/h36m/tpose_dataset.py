@@ -43,7 +43,7 @@ class Dataset(data.Dataset):
         else:
             test_view = cfg.test_view
         
-        breakpoint()
+        #breakpoint()
 
         if split == 'train' or split == 'prune':
             self.view = cfg.training_view
@@ -65,18 +65,28 @@ class Dataset(data.Dataset):
             self.tick = 0
             ni = 500
             i_intv = 1
-        if cfg.test_novel_pose or cfg.aninerf_animation:
-            i = cfg.begin_ith_frame + cfg.num_train_frame * i_intv
-            ni = cfg.num_eval_frame
 
         self.ims = np.array([
             np.array(ims_data['ims'])[self.view]
-            for ims_data in annots['ims'][i:i + ni * i_intv][::i_intv]
+            for ims_data in annots['ims'][i:i + ni][::i_intv]
         ]).ravel()
         self.cam_inds = np.array([
             np.arange(len(ims_data['ims']))[self.view]
-            for ims_data in annots['ims'][i:i + ni * i_intv][::i_intv]
+            for ims_data in annots['ims'][i:i + ni][::i_intv]
         ]).ravel()
+
+        if cfg.test_novel_pose or cfg.aninerf_animation:
+            i = cfg.begin_ith_frame + cfg.num_train_frame 
+            #ni = cfg.num_eval_frame
+            self.ims = np.array([
+                np.array(ims_data['ims'])[self.view]
+                for ims_data in annots['ims'][i:][::i_intv]
+            ]).ravel()
+            self.cam_inds = np.array([
+                np.arange(len(ims_data['ims']))[self.view]
+                for ims_data in annots['ims'][i:][::i_intv]
+            ]).ravel()
+
         self.num_cams = len(self.view)
 
         self.lbs_root = os.path.join(self.data_root, cfg.lbs)
@@ -335,7 +345,7 @@ class Dataset(data.Dataset):
 
         # reduce the image resolution by ratio
         H, W = int(img.shape[0] * ratio), int(img.shape[1] * ratio)
-        img = cv2.resize(img, (W, H), interpolation=cv2.INTER_AREA)
+        img = cv2.resize(img, (W, H), interpolation=cv2.INTER_AREA)#(1024)
         msk = cv2.resize(msk, (W, H), interpolation=cv2.INTER_NEAREST)
         orig_msk = cv2.resize(orig_msk, (W, H),
                               interpolation=cv2.INTER_NEAREST)
@@ -393,7 +403,7 @@ class Dataset(data.Dataset):
 
         thresh = None
 
-        breakpoint()
+        #breakpoint()
         if cfg.train_with_coord and self.split == 'train':
             coord_path = os.path.join(
                 self.data_root,
@@ -419,11 +429,11 @@ class Dataset(data.Dataset):
                 orig_msk = if_nerf_dutils.crop_mask_edge(orig_msk)
             occupancy = orig_msk[coord[:, 0], coord[:, 1]]
         elif (cfg.use_lpips or cfg.patch_sampling or cfg.use_ssim or cfg.use_fourier or cfg.use_tv_image) and self.split == 'train':
-            img_old = img.copy()
+            img_old = img.copy()#this
             msk_old = msk.copy()
-            if cfg.sample_focus == "" or semantic_masks[cfg.sample_focus].sum() == 0:
+            if cfg.sample_focus == "" or semantic_masks[cfg.sample_focus].sum() == 0:#this
                 ret_crop = if_nerf_dutils.crop_image_msk(img, msk, K, msk)
-            else:
+            else:# head wrong 0~1 512 512 3
                 smask = semantic_masks[cfg.sample_focus]
                 # img, msk, K, _ = if_nerf_dutils.crop_image_msk(img, msk, K, smask)
                 ret_crop = if_nerf_dutils.crop_image_msk(img, msk, K, smask)
@@ -440,7 +450,7 @@ class Dataset(data.Dataset):
             mask_at_box = mask_at_box.reshape(-1)
             occupancy = (msk[coord[:, 1], coord[:, 0]] > 0)
         else:
-            breakpoint()
+            #breakpoint()
             flag = cfg.prune_using_geo and os.path.exists(os.path.join(cfg.result_dir, "latest.npy"))
             nrays = self.nrays if not flag else 2 * self.nrays
             rgb, ray_o, ray_d, near, far, coord, mask_at_box = if_nerf_dutils.sample_ray_h36m(

@@ -173,7 +173,7 @@ def run_tmesh():
     from lib.visualizers import make_visualizer
     from lib.networks.renderer import make_renderer
 
-    breakpoint()
+    #breakpoint()
 
     cfg.perturb = 0
 
@@ -205,7 +205,7 @@ def run_tdmesh():
     from lib.visualizers import make_visualizer
     from lib.networks.renderer import make_renderer
 
-    breakpoint()
+    #breakpoint()
 
     cfg.perturb = 0
 

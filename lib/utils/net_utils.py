@@ -501,6 +501,7 @@ def load_network(net, model_dir, resume=True, epoch=-1, strict=True):
         return 0
 
     if not os.path.exists(model_dir):
+        print(model_dir)
         print(colored('pretrained model does not exist', 'red'))
         return 0
 

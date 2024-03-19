@@ -52,7 +52,7 @@ class Renderer:
 
     def get_pixel_value(self, ray_o, ray_d, near, far, occ, batch):
         n_batch = ray_o.shape[0]
-
+        
         # sampling points for nerf training
         wpts, z_vals = self.get_wsampling_points(ray_o, ray_d, near, far)
         n_batch, n_pixel, n_sample = wpts.shape[:3]

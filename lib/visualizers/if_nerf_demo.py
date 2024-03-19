@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 import numpy as np
-from sklearn.metrics import brier_score_loss
+#from sklearn.metrics import brier_score_loss
 from lib.config import cfg
 import cv2
 import os
@@ -44,7 +44,7 @@ class Visualizer:
             img_pred = img_pred + 1
         img_pred[mask_at_box] = rgb_pred
         img_pred = img_pred[..., [2, 1, 0]]
-        breakpoint()
+        #breakpoint()
         if cfg.add_brightness:
             img_pred = self.increase_brightness(img_pred, value=30. / 255.)
 

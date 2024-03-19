@@ -74,10 +74,10 @@ class Evaluator:
         return ssim
 
     def evaluate(self, output, batch, epoch=-1):
-        rgb_pred = output['rgb_map'][0].detach().cpu().numpy()
+        rgb_pred = output['rgb_map'][0].detach().cpu().numpy()#66470
         rgb_gt = batch['rgb'][0].detach().cpu().numpy()
 
-        if cfg.test_full:
+        if cfg.test_full:#this
             mask_at_box = batch['mask_at_box'][0].detach().cpu().numpy()
             H, W = batch['H'].item(), batch['W'].item()
             mask_at_box = mask_at_box.reshape(H, W)
@@ -86,9 +86,9 @@ class Evaluator:
             img_pred[mask_at_box] = rgb_pred
 
             img_gt = np.zeros((H, W, 3))
-            img_gt[mask_at_box] = rgb_gt
+            img_gt[mask_at_box] = rgb_gt#(512,512,3) 66956 non-zero 66470 true
 
-            if cfg.eval_part != "":
+            if cfg.eval_part != "":#skip
                 msk = batch['sem_mask'][partnames.index(cfg.eval_part)]
                 img_pred[~msk] = 0
                 img_gt[~msk] = 0
@@ -108,6 +108,10 @@ class Evaluator:
 
             if cfg.dry_run:
                 return
+            
+            x, y, w, h = cv2.boundingRect(mask_at_box.astype(np.uint8))
+            img_pred = img_pred[y:y+h, x:x+w]
+            img_gt = img_gt[y:y+h, x:x+w]
 
             mse = np.mean((img_pred - img_gt)**2)
             self.mse.append(mse)
@@ -121,7 +125,7 @@ class Evaluator:
             )[0].detach().cpu().numpy()
             self.lpips.append(lpips)
 
-            breakpoint()
+            #breakpoint()
             # ssim = self.ssim_metric(rgb_pred, rgb_gt, batch)
             ssim = compare_ssim(img_pred, img_gt, channel_axis=2)
             self.ssim.append(ssim)

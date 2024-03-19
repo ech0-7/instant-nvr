@@ -562,7 +562,7 @@ def pts_sample_xxx(pts, xxx, bounds, mode):
     bounds: n_batch, 2, 3
     """
     pts = pts.clone()
-    breakpoint()
+    #breakpoint()
 
     # interpolate blend weights
     min_xyz = bounds[:, 0]

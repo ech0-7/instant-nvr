@@ -1,0 +1,708 @@
+Finish initialize part networks
+Finish initialize network...
+Finish initialize trainer...
+Finish initialize optimizer...
+Finish initialize lr scheduler...
+Finish initialize recorder...
+Finish initialize evaluator...
+[*] Training experiment inb_386_300y started, log_interval: 100
+[*] First forward pass is done, this usually means cuda is initialized
+Start timer
+expname: inb_386_300y, eta: 0:00:37  epoch: 0  step: 100  reg_dist: 0.0180  offset_loss: 0.0167  img_loss: 0.0025  psnr: 25.9561  lpips_loss: 0.1016  loss: 0.1036  lr: 0.0005  data: 0.0000  batch: 0.0949  max_mem: 8713  gpu: [0]
+expname: inb_386_300y, eta: 0:00:24  epoch: 0  step: 200  reg_dist: 0.0429  offset_loss: 0.0106  img_loss: 0.0066  psnr: 22.8216  lpips_loss: 0.1889  loss: 0.1933  lr: 0.0005  data: 0.0000  batch: 0.0876  max_mem: 8869  gpu: [0]
+expname: inb_386_300y, eta: 0:00:16  epoch: 0  step: 300  reg_dist: 0.0453  offset_loss: 0.0092  img_loss: 0.0058  psnr: 23.1359  lpips_loss: 0.1983  loss: 0.2029  lr: 0.0005  data: 0.0000  batch: 0.0856  max_mem: 9568  gpu: [0]
+expname: inb_386_300y, eta: 0:00:08  epoch: 0  step: 400  reg_dist: 0.0485  offset_loss: 0.0082  img_loss: 0.0059  psnr: 22.9095  lpips_loss: 0.1983  loss: 0.2032  lr: 0.0005  data: 0.0000  batch: 0.0848  pair_loss: 0.0006  max_mem: 9746  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 0  step: 499  reg_dist: 0.0454  offset_loss: 0.0078  img_loss: 0.0052  psnr: 23.5683  lpips_loss: 0.1796  loss: 0.1842  lr: 0.0005  data: 0.0000  batch: 0.0821  pair_loss: 0.0005  max_mem: 9746  gpu: [0]
+expname: inb_386_300y, eta: 0:00:36  epoch: 0  step: 500  reg_dist: 0.0412  offset_loss: 0.0094  img_loss: 0.0046  psnr: 24.3713  lpips_loss: 0.1612  loss: 0.1654  lr: 0.0005  data: 0.0044  batch: 0.0806  pair_loss: 0.0005  max_mem: 9746  gpu: [0]
+expname: inb_386_300y, eta: 0:00:41  epoch: 1  step: 600  reg_dist: 0.0390  offset_loss: 0.0100  img_loss: 0.0040  psnr: 25.2715  lpips_loss: 0.1501  loss: 0.1541  lr: 0.0005  data: 0.0038  batch: 0.0838  pair_loss: 0.0005  max_mem: 9746  gpu: [0]
+expname: inb_386_300y, eta: 0:00:26  epoch: 1  step: 700  reg_dist: 0.0384  offset_loss: 0.0094  img_loss: 0.0041  psnr: 25.0417  lpips_loss: 0.1534  loss: 0.1573  lr: 0.0005  data: 0.0033  batch: 0.0844  pair_loss: 0.0009  max_mem: 9928  gpu: [0]
+expname: inb_386_300y, eta: 0:00:16  epoch: 1  step: 800  reg_dist: 0.0358  offset_loss: 0.0091  img_loss: 0.0044  psnr: 24.6384  lpips_loss: 0.1542  loss: 0.1579  lr: 0.0005  data: 0.0030  batch: 0.0843  pair_loss: 0.0011  max_mem: 9928  gpu: [0]
+expname: inb_386_300y, eta: 0:00:07  epoch: 1  step: 900  reg_dist: 0.0353  offset_loss: 0.0087  img_loss: 0.0051  psnr: 24.1359  lpips_loss: 0.1611  loss: 0.1647  lr: 0.0005  data: 0.0027  batch: 0.0834  pair_loss: 0.0014  max_mem: 9928  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 1  step: 999  reg_dist: 0.0353  offset_loss: 0.0088  img_loss: 0.0048  psnr: 24.4107  lpips_loss: 0.1569  loss: 0.1605  lr: 0.0005  data: 0.0024  batch: 0.0843  pair_loss: 0.0018  max_mem: 9928  gpu: [0]
+expname: inb_386_300y, eta: 0:00:41  epoch: 1  step: 1000  reg_dist: 0.0335  offset_loss: 0.0094  img_loss: 0.0045  psnr: 24.9085  lpips_loss: 0.1483  loss: 0.1517  lr: 0.0005  data: 0.0049  batch: 0.0841  pair_loss: 0.0016  max_mem: 9928  gpu: [0]
+expname: inb_386_300y, eta: 0:00:55  epoch: 2  step: 1100  reg_dist: 0.0336  offset_loss: 0.0091  img_loss: 0.0046  psnr: 24.6673  lpips_loss: 0.1571  loss: 0.1606  lr: 0.0005  data: 0.0045  batch: 0.0884  pair_loss: 0.0019  max_mem: 10900  gpu: [0]
+expname: inb_386_300y, eta: 0:00:26  epoch: 2  step: 1200  reg_dist: 0.0333  offset_loss: 0.0090  img_loss: 0.0047  psnr: 24.5399  lpips_loss: 0.1569  loss: 0.1603  lr: 0.0005  data: 0.0042  batch: 0.0884  pair_loss: 0.0024  max_mem: 10920  gpu: [0]
+expname: inb_386_300y, eta: 0:00:15  epoch: 2  step: 1300  reg_dist: 0.0335  offset_loss: 0.0090  img_loss: 0.0045  psnr: 24.6351  lpips_loss: 0.1585  loss: 0.1620  lr: 0.0005  data: 0.0039  batch: 0.0878  pair_loss: 0.0029  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:08  epoch: 2  step: 1400  reg_dist: 0.0335  offset_loss: 0.0093  img_loss: 0.0043  psnr: 25.1955  lpips_loss: 0.1528  loss: 0.1562  lr: 0.0005  data: 0.0037  batch: 0.0878  pair_loss: 0.0032  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 2  step: 1499  reg_dist: 0.0337  offset_loss: 0.0091  img_loss: 0.0042  psnr: 25.2346  lpips_loss: 0.1531  loss: 0.1566  lr: 0.0005  data: 0.0034  batch: 0.0873  pair_loss: 0.0036  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:43  epoch: 2  step: 1500  reg_dist: 0.0330  offset_loss: 0.0089  img_loss: 0.0041  psnr: 25.2510  lpips_loss: 0.1517  loss: 0.1551  lr: 0.0005  data: 0.0047  batch: 0.0872  pair_loss: 0.0039  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:33  epoch: 3  step: 1600  reg_dist: 0.0352  offset_loss: 0.0087  img_loss: 0.0041  psnr: 25.1429  lpips_loss: 0.1545  loss: 0.1581  lr: 0.0005  data: 0.0045  batch: 0.0870  pair_loss: 0.0039  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:25  epoch: 3  step: 1700  reg_dist: 0.0349  offset_loss: 0.0086  img_loss: 0.0041  psnr: 25.1233  lpips_loss: 0.1562  loss: 0.1597  lr: 0.0005  data: 0.0043  batch: 0.0869  pair_loss: 0.0047  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:19  epoch: 3  step: 1800  reg_dist: 0.0349  offset_loss: 0.0084  img_loss: 0.0042  psnr: 25.0016  lpips_loss: 0.1593  loss: 0.1629  lr: 0.0005  data: 0.0043  batch: 0.0869  pair_loss: 0.0057  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:12  epoch: 3  step: 1900  reg_dist: 0.0324  offset_loss: 0.0085  img_loss: 0.0037  psnr: 25.8113  lpips_loss: 0.1483  loss: 0.1516  lr: 0.0005  data: 0.0043  batch: 0.0890  pair_loss: 0.0065  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 3  step: 1999  reg_dist: 0.0313  offset_loss: 0.0085  img_loss: 0.0037  psnr: 25.8152  lpips_loss: 0.1462  loss: 0.1494  lr: 0.0005  data: 0.0043  batch: 0.0897  pair_loss: 0.0070  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:42  epoch: 3  step: 2000  reg_dist: 0.0292  offset_loss: 0.0087  img_loss: 0.0034  psnr: 26.4993  lpips_loss: 0.1386  loss: 0.1416  lr: 0.0005  data: 0.0059  batch: 0.0898  pair_loss: 0.0073  max_mem: 12566  gpu: [0]
+expname: inb_386_300y, eta: 0:00:33  epoch: 4  step: 2100  reg_dist: 0.0278  offset_loss: 0.0093  img_loss: 0.0033  psnr: 26.7945  lpips_loss: 0.1371  loss: 0.1403  lr: 0.0005  data: 0.0059  batch: 0.0905  pair_loss: 0.0077  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:31  epoch: 4  step: 2200  reg_dist: 0.0272  offset_loss: 0.0090  img_loss: 0.0032  psnr: 27.0565  lpips_loss: 0.1364  loss: 0.1398  lr: 0.0005  data: 0.0046  batch: 0.0921  pair_loss: 0.0081  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:21  epoch: 4  step: 2300  reg_dist: 0.0262  offset_loss: 0.0087  img_loss: 0.0033  psnr: 26.8555  lpips_loss: 0.1377  loss: 0.1412  lr: 0.0005  data: 0.0046  batch: 0.0923  pair_loss: 0.0093  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:08  epoch: 4  step: 2400  reg_dist: 0.0249  offset_loss: 0.0087  img_loss: 0.0032  psnr: 27.1077  lpips_loss: 0.1327  loss: 0.1364  lr: 0.0005  data: 0.0046  batch: 0.0923  pair_loss: 0.0110  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 4  step: 2499  reg_dist: 0.0244  offset_loss: 0.0088  img_loss: 0.0031  psnr: 27.1724  lpips_loss: 0.1331  loss: 0.1371  lr: 0.0005  data: 0.0046  batch: 0.0936  pair_loss: 0.0124  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:47  epoch: 4  step: 2500  reg_dist: 0.0233  offset_loss: 0.0087  img_loss: 0.0026  psnr: 27.4899  lpips_loss: 0.1315  loss: 0.1358  lr: 0.0005  data: 0.0069  batch: 0.0945  pair_loss: 0.0133  max_mem: 13032  gpu: [0]
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+['loss: 0.0000']
+the results are saved at exps/inb/inb_386_300y
+mse: 0.001654203960377749
+psnr: 28.08506911748448
+ssim: 0.9134817071477331
+lpips: 0.13251639902591705
+expname: inb_386_300y, eta: 0:00:33  epoch: 5  step: 2600  reg_dist: 0.0218  offset_loss: 0.0084  img_loss: 0.0026  psnr: 27.7681  lpips_loss: 0.1298  loss: 0.1342  lr: 0.0005  data: 0.0069  batch: 0.0940  pair_loss: 0.0139  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:24  epoch: 5  step: 2700  reg_dist: 0.0219  offset_loss: 0.0079  img_loss: 0.0027  psnr: 27.4749  lpips_loss: 0.1351  loss: 0.1402  lr: 0.0005  data: 0.0054  batch: 0.0940  pair_loss: 0.0147  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:17  epoch: 5  step: 2800  reg_dist: 0.0204  offset_loss: 0.0081  img_loss: 0.0024  psnr: 28.0926  lpips_loss: 0.1249  loss: 0.1300  lr: 0.0005  data: 0.0054  batch: 0.0915  pair_loss: 0.0165  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:09  epoch: 5  step: 2900  reg_dist: 0.0192  offset_loss: 0.0079  img_loss: 0.0023  psnr: 28.2085  lpips_loss: 0.1247  loss: 0.1299  lr: 0.0005  data: 0.0054  batch: 0.0918  pair_loss: 0.0174  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 5  step: 2999  reg_dist: 0.0176  offset_loss: 0.0076  img_loss: 0.0022  psnr: 28.5541  lpips_loss: 0.1181  loss: 0.1234  lr: 0.0005  data: 0.0054  batch: 0.0915  pair_loss: 0.0191  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:39  epoch: 5  step: 3000  reg_dist: 0.0162  offset_loss: 0.0071  img_loss: 0.0024  psnr: 28.0237  lpips_loss: 0.1212  loss: 0.1266  lr: 0.0005  data: 0.0072  batch: 0.0910  pair_loss: 0.0206  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:48  epoch: 6  step: 3100  reg_dist: 0.0146  offset_loss: 0.0073  img_loss: 0.0024  psnr: 28.0790  lpips_loss: 0.1188  loss: 0.1242  lr: 0.0005  data: 0.0072  batch: 0.0932  pair_loss: 0.0213  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:29  epoch: 6  step: 3200  reg_dist: 0.0136  offset_loss: 0.0073  img_loss: 0.0023  psnr: 28.5831  lpips_loss: 0.1148  loss: 0.1202  lr: 0.0005  data: 0.0058  batch: 0.0938  pair_loss: 0.0222  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:26  epoch: 6  step: 3300  reg_dist: 0.0103  offset_loss: 0.0073  img_loss: 0.0023  psnr: 28.5841  lpips_loss: 0.1133  loss: 0.1188  lr: 0.0005  data: 0.0058  batch: 0.0963  pair_loss: 0.0241  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:07  epoch: 6  step: 3400  reg_dist: 0.0091  offset_loss: 0.0071  img_loss: 0.0023  psnr: 28.5525  lpips_loss: 0.1133  loss: 0.1189  lr: 0.0005  data: 0.0058  batch: 0.0957  pair_loss: 0.0241  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 6  step: 3499  reg_dist: 0.0085  offset_loss: 0.0067  img_loss: 0.0022  psnr: 28.7215  lpips_loss: 0.1145  loss: 0.1203  lr: 0.0005  data: 0.0058  batch: 0.0956  pair_loss: 0.0256  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:49  epoch: 6  step: 3500  reg_dist: 0.0078  offset_loss: 0.0067  img_loss: 0.0022  psnr: 28.8152  lpips_loss: 0.1137  loss: 0.1196  lr: 0.0005  data: 0.0073  batch: 0.0945  pair_loss: 0.0257  max_mem: 13032  gpu: [0]
+expname: inb_386_300y, eta: 0:00:42  epoch: 7  step: 3600  reg_dist: 0.0065  offset_loss: 0.0067  img_loss: 0.0020  psnr: 29.3813  lpips_loss: 0.1073  loss: 0.1131  lr: 0.0005  data: 0.0073  batch: 0.0950  pair_loss: 0.0257  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:28  epoch: 7  step: 3700  reg_dist: 0.0058  offset_loss: 0.0066  img_loss: 0.0020  psnr: 29.1168  lpips_loss: 0.1097  loss: 0.1156  lr: 0.0005  data: 0.0056  batch: 0.0955  pair_loss: 0.0255  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:15  epoch: 7  step: 3800  reg_dist: 0.0059  offset_loss: 0.0060  img_loss: 0.0021  psnr: 28.8754  lpips_loss: 0.1126  loss: 0.1185  lr: 0.0005  data: 0.0056  batch: 0.0953  pair_loss: 0.0259  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:11  epoch: 7  step: 3900  reg_dist: 0.0060  offset_loss: 0.0057  img_loss: 0.0026  psnr: 28.1641  lpips_loss: 0.1222  loss: 0.1283  lr: 0.0005  data: 0.0056  batch: 0.0958  pair_loss: 0.0269  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 7  step: 3999  reg_dist: 0.0063  offset_loss: 0.0057  img_loss: 0.0028  psnr: 27.9567  lpips_loss: 0.1267  loss: 0.1331  lr: 0.0005  data: 0.0056  batch: 0.0958  pair_loss: 0.0268  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:46  epoch: 7  step: 4000  reg_dist: 0.0061  offset_loss: 0.0057  img_loss: 0.0027  psnr: 28.2399  lpips_loss: 0.1248  loss: 0.1310  lr: 0.0005  data: 0.0080  batch: 0.0961  pair_loss: 0.0258  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:32  epoch: 8  step: 4100  reg_dist: 0.0060  offset_loss: 0.0056  img_loss: 0.0025  psnr: 29.1416  lpips_loss: 0.1181  loss: 0.1241  lr: 0.0005  data: 0.0080  batch: 0.0946  pair_loss: 0.0271  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:37  epoch: 8  step: 4200  reg_dist: 0.0059  offset_loss: 0.0058  img_loss: 0.0025  psnr: 29.0619  lpips_loss: 0.1158  loss: 0.1218  lr: 0.0005  data: 0.0056  batch: 0.0962  pair_loss: 0.0275  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:20  epoch: 8  step: 4300  reg_dist: 0.0057  offset_loss: 0.0058  img_loss: 0.0026  psnr: 28.7774  lpips_loss: 0.1181  loss: 0.1239  lr: 0.0005  data: 0.0056  batch: 0.0972  pair_loss: 0.0286  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:09  epoch: 8  step: 4400  reg_dist: 0.0052  offset_loss: 0.0058  img_loss: 0.0026  psnr: 28.8254  lpips_loss: 0.1170  loss: 0.1223  lr: 0.0005  data: 0.0056  batch: 0.0977  pair_loss: 0.0290  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 8  step: 4499  reg_dist: 0.0051  offset_loss: 0.0057  img_loss: 0.0026  psnr: 28.4774  lpips_loss: 0.1207  loss: 0.1259  lr: 0.0005  data: 0.0056  batch: 0.0983  pair_loss: 0.0306  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:53  epoch: 8  step: 4500  reg_dist: 0.0050  offset_loss: 0.0058  img_loss: 0.0025  psnr: 28.7463  lpips_loss: 0.1176  loss: 0.1227  lr: 0.0005  data: 0.0073  batch: 0.0989  pair_loss: 0.0303  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:34  epoch: 9  step: 4600  reg_dist: 0.0050  offset_loss: 0.0059  img_loss: 0.0026  psnr: 28.6048  lpips_loss: 0.1189  loss: 0.1239  lr: 0.0005  data: 0.0073  batch: 0.0994  pair_loss: 0.0297  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:34  epoch: 9  step: 4700  reg_dist: 0.0050  offset_loss: 0.0060  img_loss: 0.0024  psnr: 28.8879  lpips_loss: 0.1178  loss: 0.1228  lr: 0.0005  data: 0.0055  batch: 0.1013  pair_loss: 0.0329  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:22  epoch: 9  step: 4800  reg_dist: 0.0050  offset_loss: 0.0057  img_loss: 0.0023  psnr: 29.0538  lpips_loss: 0.1169  loss: 0.1220  lr: 0.0005  data: 0.0055  batch: 0.1008  pair_loss: 0.0336  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:11  epoch: 9  step: 4900  reg_dist: 0.0050  offset_loss: 0.0059  img_loss: 0.0023  psnr: 28.8601  lpips_loss: 0.1181  loss: 0.1232  lr: 0.0005  data: 0.0055  batch: 0.1017  pair_loss: 0.0341  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:00  epoch: 9  step: 4999  reg_dist: 0.0047  offset_loss: 0.0061  img_loss: 0.0021  psnr: 29.6608  lpips_loss: 0.1114  loss: 0.1162  lr: 0.0005  data: 0.0055  batch: 0.1004  pair_loss: 0.0331  max_mem: 13151  gpu: [0]
+expname: inb_386_300y, eta: 0:00:52  epoch: 9  step: 5000  reg_dist: 0.0047  offset_loss: 0.0062  img_loss: 0.0019  psnr: 30.0553  lpips_loss: 0.1061  loss: 0.1108  lr: 0.0005  data: 0.0078  batch: 0.1020  pair_loss: 0.0345  max_mem: 13151  gpu: [0]
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+['loss: 0.0000']
+the results are saved at exps/inb/inb_386_300y
+mse: 0.001556152844011668
+psnr: 28.403033564476846
+ssim: 0.9188013266333755
+lpips: 0.1221061572432518
+Training finished. Time elapsed: 573.3045299053192 seconds
+Finish initialize part networks
+load model: exps/inb/inb_386_300y/trained_model/latest.pth
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+the results are saved at exps/inb/inb_386_300y
+mse: 0.0015732388300314613
+psnr: 28.26720267144914
+ssim: 0.9161552582717563
+lpips: 0.12440694868564606
+Finish initialize part networks
+Finish initialize network...
+Finish initialize trainer...
+Finish initialize optimizer...
+Finish initialize lr scheduler...
+Finish initialize recorder...
+Finish initialize evaluator...
+[*] Training experiment inb_387_300y started, log_interval: 100
+[*] First forward pass is done, this usually means cuda is initialized
+Start timer
+expname: inb_387_300y, eta: 0:00:28  epoch: 0  step: 100  reg_dist: 0.0769  offset_loss: 0.0036  img_loss: 0.0421  psnr: 13.7612  lpips_loss: 0.4489  loss: 0.4570  lr: 0.0005  data: 0.0000  batch: 0.0715  max_mem: 8213  gpu: [0]
+expname: inb_387_300y, eta: 0:00:23  epoch: 0  step: 200  reg_dist: 0.0656  offset_loss: 0.0042  img_loss: 0.0278  psnr: 16.2248  lpips_loss: 0.3500  loss: 0.3569  lr: 0.0005  data: 0.0000  batch: 0.0746  max_mem: 8351  gpu: [0]
+expname: inb_387_300y, eta: 0:00:13  epoch: 0  step: 300  reg_dist: 0.0446  offset_loss: 0.0063  img_loss: 0.0186  psnr: 22.3899  lpips_loss: 0.2504  loss: 0.2555  lr: 0.0005  data: 0.0000  batch: 0.0722  max_mem: 8614  gpu: [0]
+expname: inb_387_300y, eta: 0:00:07  epoch: 0  step: 400  reg_dist: 0.0398  offset_loss: 0.0058  img_loss: 0.0165  psnr: 21.7828  lpips_loss: 0.2627  loss: 0.2674  lr: 0.0005  data: 0.0000  batch: 0.0717  pair_loss: 0.0001  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 0  step: 499  reg_dist: 0.0372  offset_loss: 0.0055  img_loss: 0.0155  psnr: 21.3044  lpips_loss: 0.2761  loss: 0.2805  lr: 0.0005  data: 0.0000  batch: 0.0721  pair_loss: 0.0000  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:35  epoch: 0  step: 500  reg_dist: 0.0322  offset_loss: 0.0064  img_loss: 0.0131  psnr: 22.7738  lpips_loss: 0.2457  loss: 0.2497  lr: 0.0005  data: 0.0047  batch: 0.0718  pair_loss: 0.0000  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:33  epoch: 1  step: 600  reg_dist: 0.0308  offset_loss: 0.0064  img_loss: 0.0119  psnr: 22.7982  lpips_loss: 0.2288  loss: 0.2326  lr: 0.0005  data: 0.0040  batch: 0.0734  pair_loss: 0.0000  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:23  epoch: 1  step: 700  reg_dist: 0.0299  offset_loss: 0.0060  img_loss: 0.0117  psnr: 22.4659  lpips_loss: 0.2255  loss: 0.2292  lr: 0.0005  data: 0.0035  batch: 0.0740  pair_loss: 0.0000  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:13  epoch: 1  step: 800  reg_dist: 0.0274  offset_loss: 0.0062  img_loss: 0.0104  psnr: 23.8664  lpips_loss: 0.2077  loss: 0.2111  lr: 0.0005  data: 0.0031  batch: 0.0733  pair_loss: 0.0000  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:07  epoch: 1  step: 900  reg_dist: 0.0264  offset_loss: 0.0064  img_loss: 0.0094  psnr: 24.8861  lpips_loss: 0.1934  loss: 0.1968  lr: 0.0005  data: 0.0028  batch: 0.0733  pair_loss: 0.0000  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 1  step: 999  reg_dist: 0.0259  offset_loss: 0.0062  img_loss: 0.0094  psnr: 24.4655  lpips_loss: 0.2038  loss: 0.2071  lr: 0.0005  data: 0.0026  batch: 0.0738  pair_loss: 0.0000  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:40  epoch: 1  step: 1000  reg_dist: 0.0273  offset_loss: 0.0060  img_loss: 0.0097  psnr: 24.0061  lpips_loss: 0.2130  loss: 0.2165  lr: 0.0005  data: 0.0052  batch: 0.0743  pair_loss: 0.0000  max_mem: 9273  gpu: [0]
+expname: inb_387_300y, eta: 0:00:32  epoch: 2  step: 1100  reg_dist: 0.0260  offset_loss: 0.0065  img_loss: 0.0090  psnr: 24.4065  lpips_loss: 0.2053  loss: 0.2086  lr: 0.0005  data: 0.0048  batch: 0.0748  pair_loss: 0.0000  max_mem: 10891  gpu: [0]
+expname: inb_387_300y, eta: 0:00:35  epoch: 2  step: 1200  reg_dist: 0.0271  offset_loss: 0.0063  img_loss: 0.0089  psnr: 24.1908  lpips_loss: 0.2022  loss: 0.2057  lr: 0.0005  data: 0.0044  batch: 0.0778  pair_loss: 0.0000  max_mem: 10891  gpu: [0]
+expname: inb_387_300y, eta: 0:00:14  epoch: 2  step: 1300  reg_dist: 0.0267  offset_loss: 0.0061  img_loss: 0.0094  psnr: 23.7735  lpips_loss: 0.2116  loss: 0.2150  lr: 0.0005  data: 0.0041  batch: 0.0774  pair_loss: 0.0000  max_mem: 10891  gpu: [0]
+expname: inb_387_300y, eta: 0:00:07  epoch: 2  step: 1400  reg_dist: 0.0271  offset_loss: 0.0060  img_loss: 0.0088  psnr: 24.4906  lpips_loss: 0.2014  loss: 0.2049  lr: 0.0005  data: 0.0039  batch: 0.0774  pair_loss: 0.0000  max_mem: 11466  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 2  step: 1499  reg_dist: 0.0275  offset_loss: 0.0059  img_loss: 0.0083  psnr: 25.2306  lpips_loss: 0.1923  loss: 0.1958  lr: 0.0005  data: 0.0037  batch: 0.0782  pair_loss: 0.0000  max_mem: 11466  gpu: [0]
+expname: inb_387_300y, eta: 0:00:53  epoch: 2  step: 1500  reg_dist: 0.0272  offset_loss: 0.0057  img_loss: 0.0082  psnr: 25.0484  lpips_loss: 0.1950  loss: 0.1984  lr: 0.0005  data: 0.0061  batch: 0.0798  pair_loss: 0.0000  max_mem: 11466  gpu: [0]
+expname: inb_387_300y, eta: 0:00:35  epoch: 3  step: 1600  reg_dist: 0.0266  offset_loss: 0.0058  img_loss: 0.0078  psnr: 25.4988  lpips_loss: 0.1884  loss: 0.1918  lr: 0.0005  data: 0.0058  batch: 0.0802  pair_loss: 0.0000  max_mem: 11466  gpu: [0]
+expname: inb_387_300y, eta: 0:00:32  epoch: 3  step: 1700  reg_dist: 0.0278  offset_loss: 0.0057  img_loss: 0.0084  psnr: 25.0750  lpips_loss: 0.1963  loss: 0.1998  lr: 0.0005  data: 0.0055  batch: 0.0816  pair_loss: 0.0000  max_mem: 11466  gpu: [0]
+expname: inb_387_300y, eta: 0:00:14  epoch: 3  step: 1800  reg_dist: 0.0258  offset_loss: 0.0057  img_loss: 0.0069  psnr: 25.3606  lpips_loss: 0.1858  loss: 0.1891  lr: 0.0005  data: 0.0055  batch: 0.0816  pair_loss: 0.0000  max_mem: 11466  gpu: [0]
+expname: inb_387_300y, eta: 0:00:06  epoch: 3  step: 1900  reg_dist: 0.0240  offset_loss: 0.0056  img_loss: 0.0062  psnr: 26.1028  lpips_loss: 0.1755  loss: 0.1786  lr: 0.0005  data: 0.0055  batch: 0.0808  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 3  step: 1999  reg_dist: 0.0255  offset_loss: 0.0052  img_loss: 0.0073  psnr: 25.1899  lpips_loss: 0.1905  loss: 0.1938  lr: 0.0005  data: 0.0055  batch: 0.0818  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:38  epoch: 3  step: 2000  reg_dist: 0.0247  offset_loss: 0.0052  img_loss: 0.0072  psnr: 25.2588  lpips_loss: 0.1861  loss: 0.1893  lr: 0.0005  data: 0.0069  batch: 0.0821  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:37  epoch: 4  step: 2100  reg_dist: 0.0243  offset_loss: 0.0052  img_loss: 0.0072  psnr: 25.2554  lpips_loss: 0.1834  loss: 0.1874  lr: 0.0005  data: 0.0069  batch: 0.0831  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:22  epoch: 4  step: 2200  reg_dist: 0.0243  offset_loss: 0.0050  img_loss: 0.0079  psnr: 24.6542  lpips_loss: 0.1911  loss: 0.1954  lr: 0.0005  data: 0.0055  batch: 0.0833  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:12  epoch: 4  step: 2300  reg_dist: 0.0235  offset_loss: 0.0050  img_loss: 0.0082  psnr: 24.4841  lpips_loss: 0.1954  loss: 0.1999  lr: 0.0005  data: 0.0055  batch: 0.0824  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:08  epoch: 4  step: 2400  reg_dist: 0.0228  offset_loss: 0.0049  img_loss: 0.0095  psnr: 24.1975  lpips_loss: 0.2119  loss: 0.2168  lr: 0.0005  data: 0.0055  batch: 0.0828  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 4  step: 2499  reg_dist: 0.0235  offset_loss: 0.0046  img_loss: 0.0105  psnr: 23.2946  lpips_loss: 0.2276  loss: 0.2335  lr: 0.0005  data: 0.0055  batch: 0.0833  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:36  epoch: 4  step: 2500  reg_dist: 0.0238  offset_loss: 0.0043  img_loss: 0.0113  psnr: 22.4880  lpips_loss: 0.2431  loss: 0.2500  lr: 0.0005  data: 0.0069  batch: 0.0833  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+['loss: 0.0000']
+the results are saved at exps/inb/inb_387_300y
+mse: 0.0037830774215920006
+psnr: 24.550892019657386
+ssim: 0.9009633915003582
+lpips: 0.13705763220787048
+expname: inb_387_300y, eta: 0:00:32  epoch: 5  step: 2600  reg_dist: 0.0232  offset_loss: 0.0044  img_loss: 0.0113  psnr: 22.4754  lpips_loss: 0.2428  loss: 0.2500  lr: 0.0005  data: 0.0069  batch: 0.0834  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:27  epoch: 5  step: 2700  reg_dist: 0.0216  offset_loss: 0.0043  img_loss: 0.0120  psnr: 22.3226  lpips_loss: 0.2493  loss: 0.2568  lr: 0.0005  data: 0.0052  batch: 0.0840  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:17  epoch: 5  step: 2800  reg_dist: 0.0225  offset_loss: 0.0038  img_loss: 0.0132  psnr: 21.6610  lpips_loss: 0.2652  loss: 0.2741  lr: 0.0005  data: 0.0052  batch: 0.0844  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:09  epoch: 5  step: 2900  reg_dist: 0.0210  offset_loss: 0.0038  img_loss: 0.0138  psnr: 21.4492  lpips_loss: 0.2728  loss: 0.2820  lr: 0.0005  data: 0.0052  batch: 0.0831  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 5  step: 2999  reg_dist: 0.0205  offset_loss: 0.0038  img_loss: 0.0137  psnr: 21.4709  lpips_loss: 0.2695  loss: 0.2792  lr: 0.0005  data: 0.0052  batch: 0.0834  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:37  epoch: 5  step: 3000  reg_dist: 0.0192  offset_loss: 0.0037  img_loss: 0.0149  psnr: 20.5234  lpips_loss: 0.2831  loss: 0.2930  lr: 0.0005  data: 0.0064  batch: 0.0833  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:23  epoch: 6  step: 3100  reg_dist: 0.0179  offset_loss: 0.0036  img_loss: 0.0158  psnr: 19.5238  lpips_loss: 0.2971  loss: 0.3072  lr: 0.0005  data: 0.0064  batch: 0.0817  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:23  epoch: 6  step: 3200  reg_dist: 0.0171  offset_loss: 0.0037  img_loss: 0.0160  psnr: 19.4211  lpips_loss: 0.2964  loss: 0.3067  lr: 0.0005  data: 0.0041  batch: 0.0802  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:18  epoch: 6  step: 3300  reg_dist: 0.0164  offset_loss: 0.0036  img_loss: 0.0161  psnr: 19.2199  lpips_loss: 0.2982  loss: 0.3085  lr: 0.0005  data: 0.0041  batch: 0.0804  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:07  epoch: 6  step: 3400  reg_dist: 0.0139  offset_loss: 0.0040  img_loss: 0.0151  psnr: 20.0010  lpips_loss: 0.2849  loss: 0.2950  lr: 0.0005  data: 0.0041  batch: 0.0788  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 6  step: 3499  reg_dist: 0.0121  offset_loss: 0.0041  img_loss: 0.0145  psnr: 20.7848  lpips_loss: 0.2756  loss: 0.2856  lr: 0.0005  data: 0.0041  batch: 0.0782  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:39  epoch: 6  step: 3500  reg_dist: 0.0113  offset_loss: 0.0041  img_loss: 0.0145  psnr: 20.9019  lpips_loss: 0.2758  loss: 0.2857  lr: 0.0005  data: 0.0052  batch: 0.0791  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:33  epoch: 7  step: 3600  reg_dist: 0.0099  offset_loss: 0.0041  img_loss: 0.0141  psnr: 21.0226  lpips_loss: 0.2705  loss: 0.2806  lr: 0.0005  data: 0.0052  batch: 0.0789  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:25  epoch: 7  step: 3700  reg_dist: 0.0098  offset_loss: 0.0041  img_loss: 0.0150  psnr: 20.7487  lpips_loss: 0.2797  loss: 0.2902  lr: 0.0005  data: 0.0038  batch: 0.0792  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:17  epoch: 7  step: 3800  reg_dist: 0.0093  offset_loss: 0.0040  img_loss: 0.0148  psnr: 20.8130  lpips_loss: 0.2797  loss: 0.2896  lr: 0.0005  data: 0.0038  batch: 0.0790  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:08  epoch: 7  step: 3900  reg_dist: 0.0094  offset_loss: 0.0038  img_loss: 0.0146  psnr: 20.8919  lpips_loss: 0.2787  loss: 0.2887  lr: 0.0005  data: 0.0038  batch: 0.0793  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 7  step: 3999  reg_dist: 0.0093  offset_loss: 0.0038  img_loss: 0.0152  psnr: 20.7266  lpips_loss: 0.2824  loss: 0.2923  lr: 0.0005  data: 0.0038  batch: 0.0798  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:41  epoch: 7  step: 4000  reg_dist: 0.0091  offset_loss: 0.0038  img_loss: 0.0139  psnr: 21.0041  lpips_loss: 0.2716  loss: 0.2813  lr: 0.0005  data: 0.0052  batch: 0.0796  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:32  epoch: 8  step: 4100  reg_dist: 0.0084  offset_loss: 0.0038  img_loss: 0.0134  psnr: 21.1560  lpips_loss: 0.2672  loss: 0.2762  lr: 0.0005  data: 0.0052  batch: 0.0797  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:26  epoch: 8  step: 4200  reg_dist: 0.0077  offset_loss: 0.0039  img_loss: 0.0131  psnr: 21.2537  lpips_loss: 0.2644  loss: 0.2727  lr: 0.0005  data: 0.0038  batch: 0.0806  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:14  epoch: 8  step: 4300  reg_dist: 0.0073  offset_loss: 0.0040  img_loss: 0.0127  psnr: 21.6436  lpips_loss: 0.2550  loss: 0.2630  lr: 0.0005  data: 0.0038  batch: 0.0802  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:08  epoch: 8  step: 4400  reg_dist: 0.0070  offset_loss: 0.0041  img_loss: 0.0115  psnr: 22.1646  lpips_loss: 0.2362  loss: 0.2438  lr: 0.0005  data: 0.0038  batch: 0.0798  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 8  step: 4499  reg_dist: 0.0063  offset_loss: 0.0041  img_loss: 0.0108  psnr: 22.3606  lpips_loss: 0.2283  loss: 0.2352  lr: 0.0005  data: 0.0038  batch: 0.0790  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:40  epoch: 8  step: 4500  reg_dist: 0.0060  offset_loss: 0.0041  img_loss: 0.0103  psnr: 22.5298  lpips_loss: 0.2243  loss: 0.2309  lr: 0.0005  data: 0.0050  batch: 0.0784  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:38  epoch: 9  step: 4600  reg_dist: 0.0056  offset_loss: 0.0042  img_loss: 0.0096  psnr: 23.3201  lpips_loss: 0.2134  loss: 0.2195  lr: 0.0005  data: 0.0050  batch: 0.0794  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:22  epoch: 9  step: 4700  reg_dist: 0.0053  offset_loss: 0.0044  img_loss: 0.0084  psnr: 24.3851  lpips_loss: 0.1994  loss: 0.2053  lr: 0.0005  data: 0.0038  batch: 0.0794  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:19  epoch: 9  step: 4800  reg_dist: 0.0049  offset_loss: 0.0045  img_loss: 0.0075  psnr: 25.1638  lpips_loss: 0.1874  loss: 0.1929  lr: 0.0005  data: 0.0038  batch: 0.0812  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:09  epoch: 9  step: 4900  reg_dist: 0.0051  offset_loss: 0.0044  img_loss: 0.0075  psnr: 25.1405  lpips_loss: 0.1932  loss: 0.1989  lr: 0.0005  data: 0.0038  batch: 0.0821  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:00  epoch: 9  step: 4999  reg_dist: 0.0051  offset_loss: 0.0044  img_loss: 0.0075  psnr: 25.2083  lpips_loss: 0.1915  loss: 0.1972  lr: 0.0005  data: 0.0038  batch: 0.0818  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+expname: inb_387_300y, eta: 0:00:42  epoch: 9  step: 5000  reg_dist: 0.0057  offset_loss: 0.0039  img_loss: 0.0087  psnr: 24.3821  lpips_loss: 0.2083  loss: 0.2146  lr: 0.0005  data: 0.0053  batch: 0.0823  pair_loss: 0.0000  max_mem: 11684  gpu: [0]
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+['loss: 0.0000']
+the results are saved at exps/inb/inb_387_300y
+mse: 0.003738977160315925
+psnr: 24.619392613132103
+ssim: 0.9030883551759477
+lpips: 0.12959511578083038
+Training finished. Time elapsed: 524.0405704975128 seconds
+Finish initialize part networks
+load model: exps/inb/inb_387_300y/trained_model/latest.pth
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+the results are saved at exps/inb/inb_387_300y
+mse: 0.0037406258271050646
+psnr: 24.54936449851382
+ssim: 0.9018589556888098
+lpips: 0.12940162420272827
+Finish initialize part networks
+Finish initialize network...
+Finish initialize trainer...
+Finish initialize optimizer...
+Finish initialize lr scheduler...
+Finish initialize recorder...
+Finish initialize evaluator...
+[*] Training experiment inb_393_300y started, log_interval: 100
+[*] First forward pass is done, this usually means cuda is initialized
+Start timer
+expname: inb_393_300y, eta: 0:00:28  epoch: 0  step: 100  reg_dist: 0.0259  offset_loss: 0.0024  img_loss: 0.0118  psnr: 19.2779  lpips_loss: 0.2392  loss: 0.2421  lr: 0.0005  data: 0.0000  batch: 0.0706  max_mem: 8061  gpu: [0]
+expname: inb_393_300y, eta: 0:00:24  epoch: 0  step: 200  reg_dist: 0.0211  offset_loss: 0.0033  img_loss: 0.0169  psnr: 17.9293  lpips_loss: 0.2661  loss: 0.2686  lr: 0.0005  data: 0.0000  batch: 0.0755  max_mem: 8061  gpu: [0]
+expname: inb_393_300y, eta: 0:00:16  epoch: 0  step: 300  reg_dist: 0.0240  offset_loss: 0.0031  img_loss: 0.0129  psnr: 19.6246  lpips_loss: 0.2388  loss: 0.2422  lr: 0.0005  data: 0.0000  batch: 0.0771  pair_loss: 0.0002  max_mem: 8061  gpu: [0]
+expname: inb_393_300y, eta: 0:00:07  epoch: 0  step: 400  reg_dist: 0.0261  offset_loss: 0.0029  img_loss: 0.0123  psnr: 19.6582  lpips_loss: 0.2525  loss: 0.2561  lr: 0.0005  data: 0.0000  batch: 0.0775  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 0  step: 499  reg_dist: 0.0246  offset_loss: 0.0034  img_loss: 0.0109  psnr: 20.3004  lpips_loss: 0.2364  loss: 0.2398  lr: 0.0005  data: 0.0000  batch: 0.0757  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:47  epoch: 0  step: 500  reg_dist: 0.0318  offset_loss: 0.0033  img_loss: 0.0097  psnr: 21.0319  lpips_loss: 0.2340  loss: 0.2383  lr: 0.0005  data: 0.0053  batch: 0.0789  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:29  epoch: 1  step: 600  reg_dist: 0.0304  offset_loss: 0.0031  img_loss: 0.0089  psnr: 21.3494  lpips_loss: 0.2250  loss: 0.2291  lr: 0.0005  data: 0.0045  batch: 0.0781  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:24  epoch: 1  step: 700  reg_dist: 0.0280  offset_loss: 0.0029  img_loss: 0.0082  psnr: 21.7753  lpips_loss: 0.2056  loss: 0.2094  lr: 0.0005  data: 0.0040  batch: 0.0786  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:12  epoch: 1  step: 800  reg_dist: 0.0278  offset_loss: 0.0028  img_loss: 0.0086  psnr: 21.4983  lpips_loss: 0.2123  loss: 0.2160  lr: 0.0005  data: 0.0035  batch: 0.0769  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:07  epoch: 1  step: 900  reg_dist: 0.0279  offset_loss: 0.0026  img_loss: 0.0089  psnr: 21.3011  lpips_loss: 0.2187  loss: 0.2224  lr: 0.0005  data: 0.0032  batch: 0.0767  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 1  step: 999  reg_dist: 0.0280  offset_loss: 0.0025  img_loss: 0.0089  psnr: 21.2413  lpips_loss: 0.2196  loss: 0.2232  lr: 0.0005  data: 0.0029  batch: 0.0758  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:35  epoch: 1  step: 1000  reg_dist: 0.0267  offset_loss: 0.0024  img_loss: 0.0087  psnr: 21.2495  lpips_loss: 0.2127  loss: 0.2162  lr: 0.0005  data: 0.0050  batch: 0.0754  pair_loss: 0.0001  max_mem: 8595  gpu: [0]
+expname: inb_393_300y, eta: 0:00:28  epoch: 2  step: 1100  reg_dist: 0.0279  offset_loss: 0.0024  img_loss: 0.0089  psnr: 21.1472  lpips_loss: 0.2191  loss: 0.2227  lr: 0.0005  data: 0.0046  batch: 0.0750  pair_loss: 0.0001  max_mem: 8867  gpu: [0]
+expname: inb_393_300y, eta: 0:00:37  epoch: 2  step: 1200  reg_dist: 0.0268  offset_loss: 0.0027  img_loss: 0.0102  psnr: 20.7551  lpips_loss: 0.2208  loss: 0.2243  lr: 0.0005  data: 0.0043  batch: 0.0785  pair_loss: 0.0001  max_mem: 10252  gpu: [0]
+expname: inb_393_300y, eta: 0:00:17  epoch: 2  step: 1300  reg_dist: 0.0301  offset_loss: 0.0027  img_loss: 0.0099  psnr: 20.8125  lpips_loss: 0.2237  loss: 0.2275  lr: 0.0005  data: 0.0040  batch: 0.0791  pair_loss: 0.0001  max_mem: 10252  gpu: [0]
+expname: inb_393_300y, eta: 0:00:08  epoch: 2  step: 1400  reg_dist: 0.0300  offset_loss: 0.0027  img_loss: 0.0098  psnr: 20.8629  lpips_loss: 0.2252  loss: 0.2290  lr: 0.0005  data: 0.0038  batch: 0.0792  pair_loss: 0.0001  max_mem: 10619  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 2  step: 1499  reg_dist: 0.0286  offset_loss: 0.0030  img_loss: 0.0092  psnr: 21.4716  lpips_loss: 0.2159  loss: 0.2196  lr: 0.0005  data: 0.0035  batch: 0.0797  pair_loss: 0.0001  max_mem: 10619  gpu: [0]
+expname: inb_393_300y, eta: 0:00:48  epoch: 2  step: 1500  reg_dist: 0.0292  offset_loss: 0.0032  img_loss: 0.0088  psnr: 21.7529  lpips_loss: 0.2107  loss: 0.2144  lr: 0.0005  data: 0.0051  batch: 0.0807  pair_loss: 0.0001  max_mem: 10619  gpu: [0]
+expname: inb_393_300y, eta: 0:00:41  epoch: 3  step: 1600  reg_dist: 0.0316  offset_loss: 0.0033  img_loss: 0.0095  psnr: 21.4855  lpips_loss: 0.2198  loss: 0.2238  lr: 0.0005  data: 0.0048  batch: 0.0819  pair_loss: 0.0001  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:26  epoch: 3  step: 1700  reg_dist: 0.0322  offset_loss: 0.0034  img_loss: 0.0095  psnr: 21.4212  lpips_loss: 0.2206  loss: 0.2247  lr: 0.0005  data: 0.0046  batch: 0.0822  pair_loss: 0.0001  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:11  epoch: 3  step: 1800  reg_dist: 0.0313  offset_loss: 0.0035  img_loss: 0.0096  psnr: 21.4044  lpips_loss: 0.2191  loss: 0.2231  lr: 0.0005  data: 0.0046  batch: 0.0817  pair_loss: 0.0001  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:10  epoch: 3  step: 1900  reg_dist: 0.0311  offset_loss: 0.0036  img_loss: 0.0089  psnr: 21.6002  lpips_loss: 0.2145  loss: 0.2185  lr: 0.0005  data: 0.0046  batch: 0.0828  pair_loss: 0.0001  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 3  step: 1999  reg_dist: 0.0316  offset_loss: 0.0038  img_loss: 0.0089  psnr: 21.6006  lpips_loss: 0.2158  loss: 0.2198  lr: 0.0005  data: 0.0046  batch: 0.0834  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:53  epoch: 3  step: 2000  reg_dist: 0.0314  offset_loss: 0.0040  img_loss: 0.0086  psnr: 21.7877  lpips_loss: 0.2090  loss: 0.2129  lr: 0.0005  data: 0.0069  batch: 0.0849  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:34  epoch: 4  step: 2100  reg_dist: 0.0315  offset_loss: 0.0039  img_loss: 0.0088  psnr: 21.6596  lpips_loss: 0.2125  loss: 0.2173  lr: 0.0005  data: 0.0069  batch: 0.0858  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:22  epoch: 4  step: 2200  reg_dist: 0.0294  offset_loss: 0.0040  img_loss: 0.0091  psnr: 21.4224  lpips_loss: 0.2204  loss: 0.2261  lr: 0.0005  data: 0.0053  batch: 0.0847  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:14  epoch: 4  step: 2300  reg_dist: 0.0284  offset_loss: 0.0041  img_loss: 0.0093  psnr: 21.2913  lpips_loss: 0.2198  loss: 0.2256  lr: 0.0005  data: 0.0053  batch: 0.0847  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:09  epoch: 4  step: 2400  reg_dist: 0.0281  offset_loss: 0.0042  img_loss: 0.0096  psnr: 21.1072  lpips_loss: 0.2277  loss: 0.2336  lr: 0.0005  data: 0.0053  batch: 0.0854  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 4  step: 2499  reg_dist: 0.0277  offset_loss: 0.0043  img_loss: 0.0098  psnr: 21.0415  lpips_loss: 0.2331  loss: 0.2398  lr: 0.0005  data: 0.0053  batch: 0.0857  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:55  epoch: 4  step: 2500  reg_dist: 0.0269  offset_loss: 0.0045  img_loss: 0.0096  psnr: 21.1469  lpips_loss: 0.2308  loss: 0.2381  lr: 0.0005  data: 0.0073  batch: 0.0875  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+['loss: 0.0000']
+the results are saved at exps/inb/inb_393_300y
+mse: 0.0025710938154485078
+psnr: 26.09895778134197
+ssim: 0.918153237799679
+lpips: 0.11894693970680237
+expname: inb_393_300y, eta: 0:00:28  epoch: 5  step: 2600  reg_dist: 0.0256  offset_loss: 0.0047  img_loss: 0.0093  psnr: 21.3090  lpips_loss: 0.2245  loss: 0.2317  lr: 0.0005  data: 0.0073  batch: 0.0878  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:32  epoch: 5  step: 2700  reg_dist: 0.0259  offset_loss: 0.0048  img_loss: 0.0096  psnr: 21.1841  lpips_loss: 0.2338  loss: 0.2419  lr: 0.0005  data: 0.0059  batch: 0.0897  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:20  epoch: 5  step: 2800  reg_dist: 0.0241  offset_loss: 0.0048  img_loss: 0.0096  psnr: 21.1798  lpips_loss: 0.2371  loss: 0.2452  lr: 0.0005  data: 0.0059  batch: 0.0913  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:08  epoch: 5  step: 2900  reg_dist: 0.0237  offset_loss: 0.0048  img_loss: 0.0083  psnr: 21.8578  lpips_loss: 0.2287  loss: 0.2370  lr: 0.0005  data: 0.0059  batch: 0.0893  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 5  step: 2999  reg_dist: 0.0202  offset_loss: 0.0050  img_loss: 0.0081  psnr: 22.1831  lpips_loss: 0.2216  loss: 0.2298  lr: 0.0005  data: 0.0059  batch: 0.0890  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:39  epoch: 5  step: 3000  reg_dist: 0.0192  offset_loss: 0.0050  img_loss: 0.0080  psnr: 22.2362  lpips_loss: 0.2196  loss: 0.2281  lr: 0.0005  data: 0.0076  batch: 0.0889  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:33  epoch: 6  step: 3100  reg_dist: 0.0195  offset_loss: 0.0047  img_loss: 0.0084  psnr: 21.6923  lpips_loss: 0.2319  loss: 0.2410  lr: 0.0005  data: 0.0076  batch: 0.0887  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:26  epoch: 6  step: 3200  reg_dist: 0.0182  offset_loss: 0.0046  img_loss: 0.0087  psnr: 21.4328  lpips_loss: 0.2411  loss: 0.2506  lr: 0.0005  data: 0.0060  batch: 0.0883  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:15  epoch: 6  step: 3300  reg_dist: 0.0148  offset_loss: 0.0044  img_loss: 0.0090  psnr: 21.3756  lpips_loss: 0.2430  loss: 0.2525  lr: 0.0005  data: 0.0060  batch: 0.0870  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:08  epoch: 6  step: 3400  reg_dist: 0.0128  offset_loss: 0.0043  img_loss: 0.0090  psnr: 21.3659  lpips_loss: 0.2408  loss: 0.2502  lr: 0.0005  data: 0.0060  batch: 0.0866  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 6  step: 3499  reg_dist: 0.0127  offset_loss: 0.0043  img_loss: 0.0087  psnr: 21.4788  lpips_loss: 0.2427  loss: 0.2523  lr: 0.0005  data: 0.0060  batch: 0.0869  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:49  epoch: 6  step: 3500  reg_dist: 0.0133  offset_loss: 0.0043  img_loss: 0.0085  psnr: 21.6094  lpips_loss: 0.2427  loss: 0.2535  lr: 0.0005  data: 0.0074  batch: 0.0867  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:31  epoch: 7  step: 3600  reg_dist: 0.0116  offset_loss: 0.0042  img_loss: 0.0084  psnr: 21.9044  lpips_loss: 0.2365  loss: 0.2473  lr: 0.0005  data: 0.0074  batch: 0.0860  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:27  epoch: 7  step: 3700  reg_dist: 0.0104  offset_loss: 0.0043  img_loss: 0.0083  psnr: 22.0046  lpips_loss: 0.2343  loss: 0.2453  lr: 0.0005  data: 0.0051  batch: 0.0852  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:14  epoch: 7  step: 3800  reg_dist: 0.0097  offset_loss: 0.0043  img_loss: 0.0083  psnr: 21.9970  lpips_loss: 0.2333  loss: 0.2435  lr: 0.0005  data: 0.0051  batch: 0.0845  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:08  epoch: 7  step: 3900  reg_dist: 0.0086  offset_loss: 0.0043  img_loss: 0.0080  psnr: 22.2091  lpips_loss: 0.2202  loss: 0.2294  lr: 0.0005  data: 0.0051  batch: 0.0853  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 7  step: 3999  reg_dist: 0.0087  offset_loss: 0.0045  img_loss: 0.0078  psnr: 22.3527  lpips_loss: 0.2190  loss: 0.2282  lr: 0.0005  data: 0.0051  batch: 0.0854  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:45  epoch: 7  step: 4000  reg_dist: 0.0087  offset_loss: 0.0046  img_loss: 0.0076  psnr: 22.4615  lpips_loss: 0.2160  loss: 0.2253  lr: 0.0005  data: 0.0068  batch: 0.0851  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:30  epoch: 8  step: 4100  reg_dist: 0.0081  offset_loss: 0.0045  img_loss: 0.0075  psnr: 22.5035  lpips_loss: 0.2106  loss: 0.2193  lr: 0.0005  data: 0.0068  batch: 0.0855  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:24  epoch: 8  step: 4200  reg_dist: 0.0079  offset_loss: 0.0043  img_loss: 0.0077  psnr: 22.3970  lpips_loss: 0.2133  loss: 0.2218  lr: 0.0005  data: 0.0048  batch: 0.0840  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:15  epoch: 8  step: 4300  reg_dist: 0.0082  offset_loss: 0.0041  img_loss: 0.0081  psnr: 22.1514  lpips_loss: 0.2258  loss: 0.2345  lr: 0.0005  data: 0.0048  batch: 0.0844  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:08  epoch: 8  step: 4400  reg_dist: 0.0080  offset_loss: 0.0042  img_loss: 0.0086  psnr: 22.0280  lpips_loss: 0.2292  loss: 0.2377  lr: 0.0005  data: 0.0048  batch: 0.0832  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 8  step: 4499  reg_dist: 0.0080  offset_loss: 0.0042  img_loss: 0.0084  psnr: 22.1684  lpips_loss: 0.2198  loss: 0.2283  lr: 0.0005  data: 0.0048  batch: 0.0828  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:45  epoch: 8  step: 4500  reg_dist: 0.0080  offset_loss: 0.0041  img_loss: 0.0085  psnr: 21.9827  lpips_loss: 0.2228  loss: 0.2314  lr: 0.0005  data: 0.0071  batch: 0.0831  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:29  epoch: 9  step: 4600  reg_dist: 0.0079  offset_loss: 0.0038  img_loss: 0.0090  psnr: 21.5381  lpips_loss: 0.2350  loss: 0.2435  lr: 0.0005  data: 0.0071  batch: 0.0826  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:24  epoch: 9  step: 4700  reg_dist: 0.0079  offset_loss: 0.0040  img_loss: 0.0088  psnr: 21.8208  lpips_loss: 0.2298  loss: 0.2383  lr: 0.0005  data: 0.0053  batch: 0.0828  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:16  epoch: 9  step: 4800  reg_dist: 0.0077  offset_loss: 0.0042  img_loss: 0.0086  psnr: 21.9193  lpips_loss: 0.2230  loss: 0.2312  lr: 0.0005  data: 0.0053  batch: 0.0827  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:08  epoch: 9  step: 4900  reg_dist: 0.0073  offset_loss: 0.0045  img_loss: 0.0084  psnr: 22.0443  lpips_loss: 0.2151  loss: 0.2230  lr: 0.0005  data: 0.0053  batch: 0.0823  pair_loss: 0.0000  max_mem: 11428  gpu: [0]
+expname: inb_393_300y, eta: 0:00:00  epoch: 9  step: 4999  reg_dist: 0.0072  offset_loss: 0.0046  img_loss: 0.0072  psnr: 22.4725  lpips_loss: 0.2008  loss: 0.2086  lr: 0.0005  data: 0.0053  batch: 0.0820  pair_loss: 0.0000  max_mem: 11480  gpu: [0]
+expname: inb_393_300y, eta: 0:00:48  epoch: 9  step: 5000  reg_dist: 0.0095  offset_loss: 0.0046  img_loss: 0.0073  psnr: 22.4442  lpips_loss: 0.2096  loss: 0.2196  lr: 0.0005  data: 0.0070  batch: 0.0828  pair_loss: 0.0000  max_mem: 11480  gpu: [0]
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+['loss: 0.0000']
+the results are saved at exps/inb/inb_393_300y
+mse: 0.0024721970818063067
+psnr: 26.249806207389796
+ssim: 0.9177612156964178
+lpips: 0.11002549529075623
+Training finished. Time elapsed: 511.3189718723297 seconds
+Finish initialize part networks
+load model: exps/inb/inb_393_300y/trained_model/latest.pth
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+the results are saved at exps/inb/inb_393_300y
+mse: 0.0027313785264341064
+psnr: 25.8679370825659
+ssim: 0.9112435517365114
+lpips: 0.11671645194292068
+Finish initialize part networks
+load model: exps/inb/inb_386_300y/trained_model/latest.pth
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+the results are saved at exps/inb/inb_386_300y
+mse: 0.002105832436084377
+psnr: 26.923586517301054
+ssim: 0.8880095434250808
+lpips: 0.15548653900623322
+Finish initialize part networks
+load model: exps/inb/inb_387_300y/trained_model/latest.pth
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+the results are saved at exps/inb/inb_387_300y
+mse: 0.004682776389533166
+psnr: 23.512379579516896
+ssim: 0.888413970903766
+lpips: 0.14111872017383575
+Finish initialize part networks
+load model: exps/inb/inb_393_300y/trained_model/latest.pth
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+the results are saved at exps/inb/inb_393_300y
+mse: 0.004359638646834809
+psnr: 23.836482207991466
+ssim: 0.8916561310410507
+lpips: 0.13220372796058655

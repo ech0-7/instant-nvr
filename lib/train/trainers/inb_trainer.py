@@ -183,15 +183,15 @@ class NetworkWrapper(nn.Module):
             err = (torch.abs(ret['rgb_map'] - batch['rgb']).sum(dim=-1)).detach().cpu()
             psnr = -10 * np.log(img_loss.item()) / np.log(10)
             scalar_stats.update({'img_loss': img_loss, 'psnr': torch.Tensor([psnr])})
-            breakpoint()
+#            breakpoint()
 
             if cfg.use_lpips or cfg.use_ssim or cfg.use_fourier or cfg.use_tv_image:
                 H, W = batch['H'].item(), batch['W'].item()
-                rgb_pred = ret['rgb_map']
+                rgb_pred = ret['rgb_map']#(51023,3)
                 rgb_gt = batch['rgb']
                 occ_gt = batch['occupancy']
 
-                breakpoint()
+#                breakpoint()
 
                 mask_at_box = batch['mask_at_box'][0].detach().cpu()
                 H, W = batch['H'].item(), batch['W'].item()
@@ -204,9 +204,9 @@ class NetworkWrapper(nn.Module):
                 img_gt[mask_at_box] = rgb_gt
 
                 mask_gt = torch.zeros((H, W), device=rgb_pred.device, dtype=torch.bool)
-                mask_gt[mask_at_box] = occ_gt.bool()
+                mask_gt[mask_at_box] = occ_gt.bool()[:, 0]
 
-                breakpoint()
+#                breakpoint()
 
                 if cfg.use_lpips:
                     img_lpips_loss = self.perceptual_loss(img_pred.permute(2, 0, 1)[None], img_gt.permute(2, 0, 1)[None])

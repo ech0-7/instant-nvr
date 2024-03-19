@@ -22,7 +22,7 @@ class FourierLoss(torch.nn.Module):
         return amp_loss + angle_loss
 
     def forward(self, gt, pred):
-        breakpoint()
+        #breakpoint()
         H, W, C = gt.shape[-3:]
         # assert pred.shape[-3:] == [H, W, C]
 

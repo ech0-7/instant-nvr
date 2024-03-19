@@ -12,6 +12,6 @@ def make_trainer(cfg, network):
     return Trainer(network)
 
 def make_inner_trainer(cfg, network):
-    breakpoint()
+    #breakpoint()
     network_wrapper = _wrapper_factory(cfg, network)
     return network_wrapper

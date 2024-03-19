@@ -59,7 +59,7 @@ def get_center_rayd(K, RT):
 
 
 def gen_path(RT, center=None):
-    breakpoint()
+    #breakpoint()
     lower_row = np.array([[0., 0., 0., 1.]])
 
     # transfer RT to camera_to_world matrix

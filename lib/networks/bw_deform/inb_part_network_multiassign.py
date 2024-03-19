@@ -243,7 +243,7 @@ class TPoseHuman(GradModule):
             occ = torch.sum(occs * part_dist_inv[..., None], dim=1)
             return {'raw': raw, 'occ': occ, 'tocc': occs}
         elif cfg.aggr == 'mindist':
-            breakpoint()
+            #breakpoint()
             ind = part_dist[0, :, :, None].argmin(dim=1).reshape(N, 1, 1).expand(N, 1, 4)
             raw = torch.gather(raws, 1, ind)[:, 0, :]
             ind = part_dist[0, :, :, None].argmin(dim=1).reshape(N, 1, 1).expand(N, 1, 1)

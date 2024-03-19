@@ -1,0 +1,35 @@
+Finish initialize part networks
+load model: exps/inb/inb_377_300y/trained_model/latest.pth
+the results are saved at exps/inb/inb_377_300y
+mse: 0.002560533746564599
+psnr: 26.135267765774334
+ssim: 0.9260193590401349
+lpips: 0.09409838169813156
+Finish initialize part networks
+load model: exps/inb/inb_386_300y/trained_model/latest.pth
+the results are saved at exps/inb/inb_386_300y
+mse: 0.0015732388300314613
+psnr: 28.26720267144914
+ssim: 0.9161552582717563
+lpips: 0.12440694868564606
+Finish initialize part networks
+load model: exps/inb/inb_387_300y/trained_model/latest.pth
+the results are saved at exps/inb/inb_387_300y
+mse: 0.0037406258271050646
+psnr: 24.54936449851382
+ssim: 0.9018589556888098
+lpips: 0.12940162420272827
+Finish initialize part networks
+load model: exps/inb/inb_393_300y/trained_model/latest.pth
+the results are saved at exps/inb/inb_393_300y
+mse: 0.0027313785264341064
+psnr: 25.8679370825659
+ssim: 0.9112435517365114
+lpips: 0.11671645194292068
+Finish initialize part networks
+load model: exps/inb/inb_394_300y/trained_model/latest.pth
+the results are saved at exps/inb/inb_394_300y
+mse: 0.0022142745897939155
+psnr: 26.793595637372935
+ssim: 0.9139427184500943
+lpips: 0.11292615532875061

@@ -62,8 +62,8 @@ cfg.human = 313
 cfg.training_view = [0, 6, 12, 18]
 cfg.test_view = []
 cfg.begin_ith_frame = 0  # the first smpl
-cfg.num_train_frame = 1  # number of smpls
-cfg.num_eval_frame = -1  # number of frames to render
+cfg.num_train_frame = 300  # number of smpls
+cfg.num_eval_frame = 300  # number of frames to render -1
 cfg.ith_smpl = 0  # the i-th smpl
 cfg.frame_interval = 1
 cfg.smpl = 'smpl_4views_5e-4'
@@ -119,7 +119,7 @@ cfg.train = CN()
 
 cfg.train.dataset = 'CocoTrain'
 cfg.train.epoch = 10000
-cfg.train.num_workers = 8
+cfg.train.num_workers = 8#8
 cfg.train.collator = ''
 cfg.train.batch_sampler = 'default'
 cfg.train.sampler_meta = CN({'min_hw': [256, 256], 'max_hw': [480, 640], 'strategy': 'range'})
@@ -151,7 +151,7 @@ cfg.test.epoch = -1
 cfg.test.sampler = 'default'
 cfg.test.batch_sampler = 'default'
 cfg.test.sampler_meta = CN({'min_hw': [480, 640], 'max_hw': [480, 640], 'strategy': 'origin'})
-cfg.test.frame_sampler_interval = 30
+cfg.test.frame_sampler_interval = 6
 cfg.global_test_switch = False
 
 # val
@@ -280,7 +280,7 @@ cfg.debug = False
 
 cfg.chunk = 4096
 
-cfg.test_all_other = False
+cfg.test_all_other = True#!edit
 cfg.test_full = True
 
 cfg.semantic_dim = 20
@@ -291,7 +291,7 @@ cfg.render_remove = ""
 cfg.use_knn = True
 cfg.knn_k = 4
 
-cfg.smpl_meta = "data/smpl-meta"
+cfg.smpl_meta = "data/zju-mocap/my_377/smpl_lbs"
 
 cfg.eval_part = ""
 
@@ -342,6 +342,7 @@ def make_cfg(args):
         cfg.merge_from_other_cfg(parent_cfg)
 
     cfg.merge_from_other_cfg(current_cfg)
+    #args.opts[3]=int(args.opts[3])
     cfg.merge_from_list(args.opts)
 
     if cfg.train_nbfusion:

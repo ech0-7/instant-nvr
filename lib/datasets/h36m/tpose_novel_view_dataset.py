@@ -26,19 +26,37 @@ class Dataset(data.Dataset):
         annots = np.load(ann_file, allow_pickle=True).item()
         self.cams = annots['cams']
 
-        test_view = [3]
+        test_view = [1, 2, 3, 4, 5, 7, 8, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20, 21, 22]
         view = cfg.training_view if split == 'train' else test_view
         self.num_cams = len(view)
+        self.view=view
         K, RT = render_utils.load_cam(ann_file)
         center = np.array([0., 0., 5.])
         render_w2c = render_utils.gen_path(RT, center)
 
         i = cfg.begin_ith_frame
+
+        
+        i = cfg.begin_ith_frame
+        i_intv = cfg.frame_interval
+        self.f_intv = i_intv
+        ni = cfg.num_train_frame
+        """ if cfg.record_demo and split == 'val':
+            self.view = [5]
+            self.tick = 0
+            ni = 500
+            i_intv = 1
+        if cfg.test_novel_pose or cfg.aninerf_animation:
+            i = cfg.begin_ith_frame + cfg.num_train_frame * i_intv
+            ni = cfg.num_eval_frame """
         self.ims = np.array([
-            np.array(ims_data['ims'])[cfg.training_view]
-            for ims_data in annots['ims'][i:i + cfg.num_train_frame *
-                                          cfg.frame_interval]
+            np.array(ims_data['ims'])[self.view]
+            for ims_data in annots['ims'][i:i + ni][::i_intv]
         ])
+        self.cam_inds = np.array([
+            np.arange(len(ims_data['ims']))[self.view]
+            for ims_data in annots['ims'][i:i + ni][::i_intv]
+        ]).ravel()
 
         self.K = K[0]
         self.render_w2c = render_w2c
@@ -117,6 +135,13 @@ class Dataset(data.Dataset):
         pbw = pbw.astype(np.float32)
 
         return wxyz, pxyz, A, pbw, Rh, Th, big_A
+    
+    def update_global(self, ret, batch):
+        if cfg.sample_using_mse and self.error_map is not None:
+            coord = batch['coord'][0].detach().cpu().numpy()
+            err = ret['error'][0].detach().cpu().numpy()
+            cind = self.view.index(batch['cam_ind'][0])
+            self.error_map[batch['frame_index'] // self.f_intv, cind, coord[:, 0], coord[:, 1]] = err
 
     def get_mask(self, i):
         ims = self.ims[i]
@@ -157,7 +182,7 @@ class Dataset(data.Dataset):
 
     def __getitem__(self, index):
         view_index = index
-        breakpoint()
+        #breakpoint()
         if cfg.render_frame == -1:
             latent_index = index
         else:
@@ -171,7 +196,7 @@ class Dataset(data.Dataset):
         frame_index = 0
         cam_index = index % len(self.render_w2c)
 
-
+        cam_ind = self.cam_inds[cam_index]
         # cam_index = index % len(self.render_w2c)
         # cam_index = latent_index
 
@@ -191,9 +216,10 @@ class Dataset(data.Dataset):
 
         # reduce the image resolution by ratio
         img_path = os.path.join(self.data_root, self.ims[0][0])
-        img = imageio.imread(img_path)
+        img = imageio.imread(img_path).astype(np.float32) / 255.#!todo
         H, W = img.shape[:2]
         H, W = int(H * cfg.ratio), int(W * cfg.ratio)
+        img = cv2.resize(img, (W, H), interpolation=cv2.INTER_AREA)
         # msks = [
         #     cv2.resize(msk, (W, H), interpolation=cv2.INTER_NEAREST)
         #     for msk in msks
@@ -210,8 +236,9 @@ class Dataset(data.Dataset):
         occupancy = np.zeros((ray_o.shape[0], 1))
         tuv = np.load(os.path.join(self.data_root, 'bigpose_uv.npy'))
         frame_dim = np.array(latent_index / cfg.num_train_frame, dtype=np.float32)
-
+        rgb= img[mask_at_box]
         ret = {
+            'rgb':rgb,
             'ray_o': ray_o,
             'ray_d': ray_d,
             'near': near,
@@ -234,6 +261,8 @@ class Dataset(data.Dataset):
         }
         ret.update(meta)
 
+        bw_latent_index = index // self.num_cams
+
         R = cv2.Rodrigues(Rh)[0].astype(np.float32)
         latent_index = min(latent_index, cfg.num_train_frame - 1)
         meta = {
@@ -241,7 +270,9 @@ class Dataset(data.Dataset):
             'Th': Th,
             'latent_index': latent_index,
             'frame_index': frame_index,
-            'view_index': view_index
+            'view_index': view_index,
+            'cam_ind': cam_ind,
+            'bw_latent_index': bw_latent_index
         }
         ret.update(meta)
 

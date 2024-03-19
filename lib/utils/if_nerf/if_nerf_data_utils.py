@@ -311,9 +311,9 @@ def sample_ray_h36m(img, msk, K, R, T, bounds, nrays, split):
 
 
 def get_rays_within_bounds(H, W, K, R, T, bounds):
-    ray_o, ray_d = get_rays(H, W, K, R, T)
+    ray_o, ray_d = get_rays(H, W, K, R, T)#(307,307,3)
 
-    ray_o = ray_o.reshape(-1, 3).astype(np.float32)
+    ray_o = ray_o.reshape(-1, 3).astype(np.float32)#(94249,3)
     ray_d = ray_d.reshape(-1, 3).astype(np.float32)
     near, far, mask_at_box = get_near_far(bounds, ray_o, ray_d)
     near = near.astype(np.float32)
@@ -608,9 +608,16 @@ def padding_bbox(bbox, img):
     return bbox
 
 
-def crop_image_msk(img, msk, K, ref_msk):
-    x, y, w, h = cv2.boundingRect(ref_msk)
-    if w < cfg.patch_size or h < cfg.patch_size:
+def crop_image_msk(img, msk, K, ref_msk):  
+    # 如果图像具有多个通道 + sum mask
+    if ref_msk.shape[-1] > 1:
+        ref_msk = ref_msk.sum(axis=-1).astype(np.uint8)
+    try:
+        x, y, w, h = cv2.boundingRect(ref_msk)#(307,307)   (512,512,3)  1&0 0&3
+    except cv2.error as e:
+        # 在捕获到特定异常时执行断点操作
+        breakpoint()
+    if w < cfg.patch_size or h < cfg.patch_size:#185 88 227 195
         return None
     bbox = np.array([[x, y], [x + w, y + h]])
     bbox = padding_bbox(bbox, img)

@@ -1,0 +1,124 @@
+Finish initialize part networks
+Finish initialize network...
+Finish initialize trainer...
+Finish initialize optimizer...
+Finish initialize lr scheduler...
+Finish initialize recorder...
+Finish initialize evaluator...
+[*] Training experiment inb_377_novel started, log_interval: 100
+[*] First forward pass is done, this usually means cuda is initialized
+Start timer
+expname: inb_377_novel, eta: 0:00:24  epoch: 0  step: 100  reg_dist: 0.0823  offset_loss: 0.0005  img_loss: 0.0469  psnr: 13.2910  lpips_loss: 0.4091  loss: 0.4174  lr: 0.0005  data: 0.0000  batch: 0.0600  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:19  epoch: 0  step: 200  reg_dist: 0.0477  offset_loss: 0.0022  img_loss: 0.0256  psnr: 18.4627  lpips_loss: 0.2644  loss: 0.2693  lr: 0.0005  data: 0.0000  batch: 0.0619  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:16  epoch: 0  step: 300  reg_dist: 0.0419  offset_loss: 0.0027  img_loss: 0.0197  psnr: 19.3180  lpips_loss: 0.2343  loss: 0.2388  lr: 0.0005  data: 0.0000  batch: 0.0682  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:06  epoch: 0  step: 400  reg_dist: 0.0390  offset_loss: 0.0025  img_loss: 0.0157  psnr: 20.5930  lpips_loss: 0.2095  loss: 0.2139  lr: 0.0005  data: 0.0000  batch: 0.0661  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 0  step: 499  reg_dist: 0.0344  offset_loss: 0.0022  img_loss: 0.0136  psnr: 21.0550  lpips_loss: 0.2012  loss: 0.2053  lr: 0.0005  data: 0.0000  batch: 0.0655  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:34  epoch: 0  step: 500  reg_dist: 0.0353  offset_loss: 0.0019  img_loss: 0.0122  psnr: 21.3085  lpips_loss: 0.1983  loss: 0.2025  lr: 0.0005  data: 0.0039  batch: 0.0660  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:30  epoch: 1  step: 600  reg_dist: 0.0353  offset_loss: 0.0019  img_loss: 0.0118  psnr: 21.1488  lpips_loss: 0.2032  loss: 0.2076  lr: 0.0005  data: 0.0034  batch: 0.0674  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:27  epoch: 1  step: 700  reg_dist: 0.0325  offset_loss: 0.0021  img_loss: 0.0115  psnr: 21.0484  lpips_loss: 0.2016  loss: 0.2057  lr: 0.0005  data: 0.0029  batch: 0.0704  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:15  epoch: 1  step: 800  reg_dist: 0.0325  offset_loss: 0.0023  img_loss: 0.0116  psnr: 20.8402  lpips_loss: 0.1991  loss: 0.2032  lr: 0.0005  data: 0.0026  batch: 0.0711  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:08  epoch: 1  step: 900  reg_dist: 0.0331  offset_loss: 0.0023  img_loss: 0.0111  psnr: 20.9430  lpips_loss: 0.1992  loss: 0.2033  lr: 0.0005  data: 0.0023  batch: 0.0726  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 1  step: 999  reg_dist: 0.0329  offset_loss: 0.0025  img_loss: 0.0101  psnr: 22.2635  lpips_loss: 0.1858  loss: 0.1899  lr: 0.0005  data: 0.0021  batch: 0.0724  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:37  epoch: 1  step: 1000  reg_dist: 0.0319  offset_loss: 0.0024  img_loss: 0.0097  psnr: 22.2894  lpips_loss: 0.1837  loss: 0.1877  lr: 0.0005  data: 0.0043  batch: 0.0726  pair_loss: 0.0001  max_mem: 9045  gpu: [0]
+expname: inb_377_novel, eta: 0:00:29  epoch: 2  step: 1100  reg_dist: 0.0327  offset_loss: 0.0023  img_loss: 0.0091  psnr: 22.6908  lpips_loss: 0.1767  loss: 0.1807  lr: 0.0005  data: 0.0040  batch: 0.0726  pair_loss: 0.0001  max_mem: 10760  gpu: [0]
+expname: inb_377_novel, eta: 0:00:35  epoch: 2  step: 1200  reg_dist: 0.0330  offset_loss: 0.0023  img_loss: 0.0092  psnr: 22.4788  lpips_loss: 0.1766  loss: 0.1806  lr: 0.0005  data: 0.0037  batch: 0.0759  pair_loss: 0.0001  max_mem: 10760  gpu: [0]
+expname: inb_377_novel, eta: 0:00:19  epoch: 2  step: 1300  reg_dist: 0.0328  offset_loss: 0.0024  img_loss: 0.0087  psnr: 22.8886  lpips_loss: 0.1719  loss: 0.1760  lr: 0.0005  data: 0.0035  batch: 0.0774  pair_loss: 0.0001  max_mem: 10760  gpu: [0]
+expname: inb_377_novel, eta: 0:00:06  epoch: 2  step: 1400  reg_dist: 0.0327  offset_loss: 0.0023  img_loss: 0.0088  psnr: 22.6779  lpips_loss: 0.1758  loss: 0.1798  lr: 0.0005  data: 0.0033  batch: 0.0769  pair_loss: 0.0001  max_mem: 10760  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 2  step: 1499  reg_dist: 0.0320  offset_loss: 0.0023  img_loss: 0.0087  psnr: 22.6535  lpips_loss: 0.1750  loss: 0.1789  lr: 0.0005  data: 0.0031  batch: 0.0760  pair_loss: 0.0001  max_mem: 10760  gpu: [0]
+expname: inb_377_novel, eta: 0:00:40  epoch: 2  step: 1500  reg_dist: 0.0314  offset_loss: 0.0025  img_loss: 0.0085  psnr: 22.6184  lpips_loss: 0.1771  loss: 0.1810  lr: 0.0005  data: 0.0043  batch: 0.0764  pair_loss: 0.0001  max_mem: 10760  gpu: [0]
+expname: inb_377_novel, eta: 0:00:34  epoch: 3  step: 1600  reg_dist: 0.0305  offset_loss: 0.0026  img_loss: 0.0086  psnr: 22.5073  lpips_loss: 0.1780  loss: 0.1818  lr: 0.0005  data: 0.0041  batch: 0.0769  pair_loss: 0.0001  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:29  epoch: 3  step: 1700  reg_dist: 0.0301  offset_loss: 0.0025  img_loss: 0.0083  psnr: 22.6479  lpips_loss: 0.1757  loss: 0.1794  lr: 0.0005  data: 0.0039  batch: 0.0779  pair_loss: 0.0001  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:19  epoch: 3  step: 1800  reg_dist: 0.0271  offset_loss: 0.0026  img_loss: 0.0069  psnr: 22.8424  lpips_loss: 0.1686  loss: 0.1721  lr: 0.0005  data: 0.0039  batch: 0.0797  pair_loss: 0.0001  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:07  epoch: 3  step: 1900  reg_dist: 0.0271  offset_loss: 0.0025  img_loss: 0.0067  psnr: 23.2781  lpips_loss: 0.1651  loss: 0.1687  lr: 0.0005  data: 0.0039  batch: 0.0802  pair_loss: 0.0001  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 3  step: 1999  reg_dist: 0.0281  offset_loss: 0.0024  img_loss: 0.0067  psnr: 23.2621  lpips_loss: 0.1658  loss: 0.1694  lr: 0.0005  data: 0.0039  batch: 0.0800  pair_loss: 0.0001  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:38  epoch: 3  step: 2000  reg_dist: 0.0292  offset_loss: 0.0024  img_loss: 0.0067  psnr: 23.3006  lpips_loss: 0.1654  loss: 0.1691  lr: 0.0005  data: 0.0056  batch: 0.0808  pair_loss: 0.0001  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:40  epoch: 4  step: 2100  reg_dist: 0.0297  offset_loss: 0.0026  img_loss: 0.0065  psnr: 23.6192  lpips_loss: 0.1617  loss: 0.1667  lr: 0.0005  data: 0.0056  batch: 0.0827  pair_loss: 0.0001  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:26  epoch: 4  step: 2200  reg_dist: 0.0279  offset_loss: 0.0028  img_loss: 0.0066  psnr: 23.5687  lpips_loss: 0.1582  loss: 0.1631  lr: 0.0005  data: 0.0044  batch: 0.0837  pair_loss: 0.0001  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:15  epoch: 4  step: 2300  reg_dist: 0.0272  offset_loss: 0.0028  img_loss: 0.0066  psnr: 23.5727  lpips_loss: 0.1603  loss: 0.1661  lr: 0.0005  data: 0.0044  batch: 0.0839  pair_loss: 0.0000  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:08  epoch: 4  step: 2400  reg_dist: 0.0270  offset_loss: 0.0027  img_loss: 0.0065  psnr: 23.6157  lpips_loss: 0.1589  loss: 0.1650  lr: 0.0005  data: 0.0044  batch: 0.0836  pair_loss: 0.0000  max_mem: 10933  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 4  step: 2499  reg_dist: 0.0258  offset_loss: 0.0025  img_loss: 0.0064  psnr: 23.6669  lpips_loss: 0.1617  loss: 0.1681  lr: 0.0005  data: 0.0044  batch: 0.0835  pair_loss: 0.0001  max_mem: 11210  gpu: [0]
+expname: inb_377_novel, eta: 0:00:41  epoch: 4  step: 2500  reg_dist: 0.0240  offset_loss: 0.0026  img_loss: 0.0064  psnr: 23.6407  lpips_loss: 0.1589  loss: 0.1654  lr: 0.0005  data: 0.0060  batch: 0.0833  pair_loss: 0.0001  max_mem: 11210  gpu: [0]
+novel
+novel
+novel
+['loss: 0.0000']
+the results are saved at exps/inb/inb_377_novel
+mse: 0.0026121297006025546
+psnr: 26.02072053978806
+ssim: 0.927131336075187
+lpips: 0.0944182351231575
+expname: inb_377_novel, eta: 0:00:27  epoch: 5  step: 2600  reg_dist: 0.0230  offset_loss: 0.0026  img_loss: 0.0066  psnr: 23.0425  lpips_loss: 0.1659  loss: 0.1726  lr: 0.0005  data: 0.0060  batch: 0.0833  pair_loss: 0.0001  max_mem: 11210  gpu: [0]
+expname: inb_377_novel, eta: 0:00:28  epoch: 5  step: 2700  reg_dist: 0.0221  offset_loss: 0.0026  img_loss: 0.0067  psnr: 22.9941  lpips_loss: 0.1638  loss: 0.1707  lr: 0.0005  data: 0.0045  batch: 0.0843  pair_loss: 0.0001  max_mem: 11210  gpu: [0]
+expname: inb_377_novel, eta: 0:00:18  epoch: 5  step: 2800  reg_dist: 0.0217  offset_loss: 0.0026  img_loss: 0.0069  psnr: 22.7181  lpips_loss: 0.1693  loss: 0.1777  lr: 0.0005  data: 0.0045  batch: 0.0854  pair_loss: 0.0001  max_mem: 11210  gpu: [0]
+expname: inb_377_novel, eta: 0:00:09  epoch: 5  step: 2900  reg_dist: 0.0203  offset_loss: 0.0026  img_loss: 0.0069  psnr: 22.7197  lpips_loss: 0.1697  loss: 0.1783  lr: 0.0005  data: 0.0045  batch: 0.0844  pair_loss: 0.0001  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 5  step: 2999  reg_dist: 0.0193  offset_loss: 0.0026  img_loss: 0.0071  psnr: 22.4533  lpips_loss: 0.1716  loss: 0.1805  lr: 0.0005  data: 0.0045  batch: 0.0840  pair_loss: 0.0001  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:48  epoch: 5  step: 3000  reg_dist: 0.0179  offset_loss: 0.0026  img_loss: 0.0067  psnr: 22.6423  lpips_loss: 0.1649  loss: 0.1738  lr: 0.0005  data: 0.0067  batch: 0.0854  pair_loss: 0.0001  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:33  epoch: 6  step: 3100  reg_dist: 0.0174  offset_loss: 0.0026  img_loss: 0.0066  psnr: 22.8778  lpips_loss: 0.1638  loss: 0.1731  lr: 0.0005  data: 0.0067  batch: 0.0865  pair_loss: 0.0001  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:28  epoch: 6  step: 3200  reg_dist: 0.0166  offset_loss: 0.0025  img_loss: 0.0065  psnr: 22.9582  lpips_loss: 0.1610  loss: 0.1705  lr: 0.0005  data: 0.0054  batch: 0.0872  pair_loss: 0.0001  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:16  epoch: 6  step: 3300  reg_dist: 0.0162  offset_loss: 0.0026  img_loss: 0.0067  psnr: 22.8532  lpips_loss: 0.1623  loss: 0.1720  lr: 0.0005  data: 0.0054  batch: 0.0869  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:07  epoch: 6  step: 3400  reg_dist: 0.0160  offset_loss: 0.0026  img_loss: 0.0074  psnr: 22.4779  lpips_loss: 0.1700  loss: 0.1805  lr: 0.0005  data: 0.0054  batch: 0.0857  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 6  step: 3499  reg_dist: 0.0151  offset_loss: 0.0027  img_loss: 0.0067  psnr: 22.7649  lpips_loss: 0.1653  loss: 0.1760  lr: 0.0005  data: 0.0054  batch: 0.0860  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:46  epoch: 6  step: 3500  reg_dist: 0.0148  offset_loss: 0.0026  img_loss: 0.0068  psnr: 22.4072  lpips_loss: 0.1692  loss: 0.1800  lr: 0.0005  data: 0.0080  batch: 0.0870  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:39  epoch: 7  step: 3600  reg_dist: 0.0126  offset_loss: 0.0027  img_loss: 0.0065  psnr: 22.7790  lpips_loss: 0.1645  loss: 0.1755  lr: 0.0005  data: 0.0080  batch: 0.0881  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:30  epoch: 7  step: 3700  reg_dist: 0.0103  offset_loss: 0.0028  img_loss: 0.0064  psnr: 23.0174  lpips_loss: 0.1630  loss: 0.1740  lr: 0.0005  data: 0.0063  batch: 0.0893  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:17  epoch: 7  step: 3800  reg_dist: 0.0093  offset_loss: 0.0027  img_loss: 0.0068  psnr: 22.5516  lpips_loss: 0.1683  loss: 0.1783  lr: 0.0005  data: 0.0063  batch: 0.0886  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:09  epoch: 7  step: 3900  reg_dist: 0.0096  offset_loss: 0.0028  img_loss: 0.0066  psnr: 22.8022  lpips_loss: 0.1688  loss: 0.1791  lr: 0.0005  data: 0.0063  batch: 0.0890  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 7  step: 3999  reg_dist: 0.0088  offset_loss: 0.0028  img_loss: 0.0070  psnr: 22.6567  lpips_loss: 0.1697  loss: 0.1792  lr: 0.0005  data: 0.0063  batch: 0.0885  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:44  epoch: 7  step: 4000  reg_dist: 0.0087  offset_loss: 0.0028  img_loss: 0.0067  psnr: 23.0901  lpips_loss: 0.1668  loss: 0.1762  lr: 0.0005  data: 0.0078  batch: 0.0886  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:39  epoch: 8  step: 4100  reg_dist: 0.0086  offset_loss: 0.0029  img_loss: 0.0064  psnr: 23.3408  lpips_loss: 0.1627  loss: 0.1720  lr: 0.0005  data: 0.0078  batch: 0.0898  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:33  epoch: 8  step: 4200  reg_dist: 0.0088  offset_loss: 0.0029  img_loss: 0.0062  psnr: 23.5518  lpips_loss: 0.1610  loss: 0.1704  lr: 0.0005  data: 0.0062  batch: 0.0911  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:18  epoch: 8  step: 4300  reg_dist: 0.0085  offset_loss: 0.0028  img_loss: 0.0060  psnr: 23.8332  lpips_loss: 0.1564  loss: 0.1655  lr: 0.0005  data: 0.0062  batch: 0.0923  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:08  epoch: 8  step: 4400  reg_dist: 0.0087  offset_loss: 0.0028  img_loss: 0.0058  psnr: 24.0656  lpips_loss: 0.1558  loss: 0.1652  lr: 0.0005  data: 0.0062  batch: 0.0918  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 8  step: 4499  reg_dist: 0.0073  offset_loss: 0.0028  img_loss: 0.0056  psnr: 24.1730  lpips_loss: 0.1538  loss: 0.1617  lr: 0.0005  data: 0.0062  batch: 0.0905  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:36  epoch: 8  step: 4500  reg_dist: 0.0070  offset_loss: 0.0028  img_loss: 0.0055  psnr: 24.2366  lpips_loss: 0.1505  loss: 0.1582  lr: 0.0005  data: 0.0076  batch: 0.0893  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:39  epoch: 9  step: 4600  reg_dist: 0.0069  offset_loss: 0.0028  img_loss: 0.0059  psnr: 24.0285  lpips_loss: 0.1560  loss: 0.1636  lr: 0.0005  data: 0.0076  batch: 0.0896  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:23  epoch: 9  step: 4700  reg_dist: 0.0069  offset_loss: 0.0028  img_loss: 0.0058  psnr: 24.1190  lpips_loss: 0.1572  loss: 0.1647  lr: 0.0005  data: 0.0055  batch: 0.0886  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:23  epoch: 9  step: 4800  reg_dist: 0.0067  offset_loss: 0.0028  img_loss: 0.0059  psnr: 23.9912  lpips_loss: 0.1575  loss: 0.1650  lr: 0.0005  data: 0.0055  batch: 0.0903  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:06  epoch: 9  step: 4900  reg_dist: 0.0066  offset_loss: 0.0028  img_loss: 0.0059  psnr: 23.9943  lpips_loss: 0.1565  loss: 0.1638  lr: 0.0005  data: 0.0055  batch: 0.0889  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:00  epoch: 9  step: 4999  reg_dist: 0.0066  offset_loss: 0.0027  img_loss: 0.0053  psnr: 24.3308  lpips_loss: 0.1525  loss: 0.1598  lr: 0.0005  data: 0.0055  batch: 0.0907  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+expname: inb_377_novel, eta: 0:00:56  epoch: 9  step: 5000  reg_dist: 0.0060  offset_loss: 0.0028  img_loss: 0.0047  psnr: 24.5981  lpips_loss: 0.1455  loss: 0.1521  lr: 0.0005  data: 0.0084  batch: 0.0926  pair_loss: 0.0000  max_mem: 11744  gpu: [0]
+novel
+novel
+novel
+['loss: 0.0000']
+the results are saved at exps/inb/inb_377_novel
+mse: 0.0026995009756955275
+psnr: 25.90408040403784
+ssim: 0.9258727839841022
+lpips: 0.09020231664180756
+Training finished. Time elapsed: 451.513827085495 seconds
+Finish initialize part networks
+load model: exps/inb/inb_377_novel/trained_model/latest.pth
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+the results are saved at exps/inb/inb_377_novel
+mse: 0.0025996563494966158
+psnr: 26.10479650217557
+ssim: 0.9288963615156649
+lpips: 0.09093888103961945
+Finish initialize part networks
+load model: exps/inb/inb_377_novel/trained_model/latest.pth
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+novel
+the results are saved at exps/inb/inb_377_novel
+mse: 0.004339075122796274
+psnr: 23.759770472745288
+ssim: 0.8976422334796542
+lpips: 0.11638951301574707
